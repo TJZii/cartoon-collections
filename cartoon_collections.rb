@@ -29,7 +29,13 @@ def find_the_cheese(pantry)# code an argument here
   goal = ""
   cheese_types = ["cheddar", "gouda", "camembert"]
   while z < pantry.length
-    pantry..include("#{cheese_types[z]}")
+    if(pantry[z] == "cheddar")
+      return "cheddar"
+    elsif(pantry[z] == "gouda")
+      return "gouda"
+    elsif(pantry[z] == "camembert")
+      return "camembert"
+    end
     z += 1
   end
 end
